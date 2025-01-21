@@ -1,0 +1,190 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    color: #fff;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    background-color: rgb(18, 17, 19);
+}
+
+::-webkit-scrollbar{
+    background-color: #333333;
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #505050;
+    width: 6px;
+    height: 6px;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 10%;
+    overflow-x: hidden;
+}
+
+h2 {
+    color: aqua;
+    margin-bottom: 20px;
+}
+
+.avatar {
+    mask-image: linear-gradient(black 80%, transparent);
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8) !important;
+    z-index: 9999 !important;
+    position: fixed;
+    padding: 0 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+#top-container {
+    margin: 85px 0;
+}
+
+/* project */
+
+body.open_modal{
+    overflow: hidden;
+}
+
+.box-project {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    transition: all .3s;
+}
+
+.box-project:hover {
+    transform: scale(1.1);
+    transition: all .3s;
+    border-color: rgb(136, 50, 218) !important;
+}
+
+.project-modal {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    /* width: 66%; */
+    /* height: 66%; */
+    display: none;
+}
+
+#modal-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+}
+
+
+
+
+/* skills */
+
+.custom-tooltip {
+    --bs-tooltip-bg: rgb(24, 104, 158);
+    --bs-tooltip-color: #fff;
+}
+
+.max-container {
+    max-width: 70%;
+}
+
+/* information */
+
+/* .img-aboutme{
+    max-height: 250px;
+} */
+
+.info-izquierda {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all .8s;
+}
+
+.info-derecha {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all .8s;
+}
+
+.visible {
+    opacity: 1;
+    transform: none;
+    transition: all .8s;
+}
+
+.offset-box {
+    margin-top: 25%;
+    /* Ajusta este valor para desplazar verticalmente los divs de la derecha */
+}
+
+/* footer */
+
+.footer-link {
+    color: #fff;
+    fill: #fff;
+}
+
+.footer-link:hover {
+    color: aqua;
+    fill: aqua;
+}
+
+
+.form-control::placeholder {
+    color: rgb(75, 75, 75);
+    opacity: 1;
+    /* Para que el color sea visible */
+}
+
+/* Para navegadores WebKit (Chrome, Safari, Opera) */
+.form-control::-webkit-input-placeholder {
+    color: rgb(75, 75, 75);
+}
+
+/* Para Mozilla Firefox 19+ */
+.form-control::-moz-placeholder {
+    color: rgb(75, 75, 75);
+    opacity: 1;
+}
+
+/* Para Mozilla Firefox 4 a 18 */
+.form-control:-moz-placeholder {
+    color: rgb(75, 75, 75);
+    opacity: 1;
+}
+
+/* Para Internet Explorer 10+ */
+.form-control:-ms-input-placeholder {
+    color: rgb(75, 75, 75);
+}
+
+.contacts{
+    color: aqua;
+    text-shadow: 1px 1px 0 #000,
+                -1px 1px 0 #000,
+                1px -1px 0 #000,
+                -1px -1px 0 #000;
+}
